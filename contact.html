@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="おもかげへのお問い合わせ。商品についてのご質問や購入前のご相談はこちらから。">
+  <title>Contact | おもかげ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">おもかげ</a>
+
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="concept.html">Concept</a>
+        <a href="products.html">Products</a>
+        <a href="experience.html">Experience</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <p>CONTACT</p>
+        <h1>お問い合わせ</h1>
+        <span>どんな小さなことでも、お気軽にご相談ください。</span>
+      </div>
+    </section>
+
+
+    <!-- CONTACT INTRO -->
+    <section class="contact-intro">
+      <p class="section-label">WE ARE HERE FOR YOU</p>
+
+      <h2>
+        あなたの想いに、<br>
+        丁寧に向き合います。
+      </h2>
+
+      <p>
+        商品についてのご質問や購入前のご相談など、<br>
+        気になることがございましたら、こちらからお問い合わせください。<br>
+        一つひとつ、丁寧にお答えいたします。
+      </p>
+    </section>
+
+
+    <!-- CONTACT MENU -->
+    <section class="contact-menu">
+      <div class="contact-menu-inner">
+
+        <div class="contact-menu-item">
+          <span class="contact-menu-number">01</span>
+          <h3>商品について</h3>
+          <p>
+            商品の機能や使い方、香りの再現方法など、
+            商品に関するご質問はこちら。
+          </p>
+        </div>
+
+        <div class="contact-menu-item">
+          <span class="contact-menu-number">02</span>
+          <h3>購入前のご相談</h3>
+          <p>
+            価格や購入方法、商品選びについてなど、
+            ご購入前の不安や疑問をご相談いただけます。
+          </p>
+        </div>
+
+        <div class="contact-menu-item">
+          <span class="contact-menu-number">03</span>
+          <h3>その他のお問い合わせ</h3>
+          <p>
+            体験イベントやサービス全般についての
+            ご質問・ご意見はこちら。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section">
+      <div class="contact-form-inner">
+
+        <div class="contact-form-heading">
+          <p class="section-label">CONTACT FORM</p>
+          <h2>お問い合わせフォーム</h2>
+          <p>
+            以下の項目をご入力のうえ、送信してください。
+          </p>
+        </div>
+
+        <form class="contact-form">
+
+          <div class="form-group">
+            <label for="contact-name">
+              お名前 <span class="required">必須</span>
+            </label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              placeholder="例：山田 花子"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">
+              メールアドレス <span class="required">必須</span>
+            </label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              placeholder="例：example@email.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="contact-type">
+              お問い合わせ内容 <span class="required">必須</span>
+            </label>
+            <select id="contact-type" name="type" required>
+              <option value="">選択してください</option>
+              <option value="商品について">商品について</option>
+              <option value="購入前のご相談">購入前のご相談</option>
+              <option value="体験イベントについて">体験イベントについて</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">
+              お問い合わせ詳細 <span class="required">必須</span>
+            </label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="7"
+              placeholder="お問い合わせ内容をご入力ください。"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-privacy">
+            <label>
+              <input type="checkbox" name="privacy" required>
+              <span>
+                個人情報の取り扱いについて同意します。
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="contact-submit">
+            送信する
+          </button>
+
+          <p class="form-note">
+            ※現在は画面デザインの段階です。お問い合わせの送信機能は、
+            今後システムと連携して実装します。
+          </p>
+
+        </form>
+      </div>
+    </section>
+
+
+    <!-- CONTACT MESSAGE -->
+    <section class="contact-message">
+      <p class="section-label">WITH CARE</p>
+
+      <h2>
+        大切な記憶を、<br>
+        これからも大切に。
+      </h2>
+
+      <p>
+        「おもかげ」は、香りを通して<br>
+        あなたの大切な想いに寄り添います。
+      </p>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">おもかげ</a>
+        <p>記憶に、そっと触れる。</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="concept.html">Concept</a>
+        <a href="products.html">Products</a>
+        <a href="experience.html">Experience</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      © 2026 おもかげ All Rights Reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
